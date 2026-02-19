@@ -3,7 +3,6 @@ This repository contains all code and data to generate the results and figures r
 Repository structure:
 ```{r}
 narrative_review/
-├── manuscript.qmd            # Quarto document containing the manuscript
 ├── r_scripts/           
 |   ├── power_calculations.R  # Script containing power analysis calculations
 |   ├──  simulations/         # Folder containing scripts to reproduce simulations used in Figures 1, 2, 6, 7 and 8
