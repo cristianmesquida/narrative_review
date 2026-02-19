@@ -30,10 +30,12 @@ Fig8 <- peeking %>% ggplot(aes(y=p,x=size))+
 
 title <- expression(paste("Observed ",italic(p),"-value"))
 Fig8 <- annotate_figure(Fig8, left = text_grob(title,size = 10,hjust = 0.35, vjust = 1.2, rot = 90))
-print(Fig8)
 
-pdf(here("figures", "Fig8.pdf"), height = 3, width = 3, useDingbats = F)
-print(Fig8)
-dev.off()
- 
+ggsave(
+  here("figures", "fig8.png"),
+  plot = Fig8,
+  width = 3,
+  height = 3,
+  dpi = 300
+)
 

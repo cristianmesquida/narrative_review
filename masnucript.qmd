@@ -1,0 +1,618 @@
+# Chapter 2: Replication concerns in sports and exercise science: a narrative review of selected methodological issues in the field
+
+## Introduction
+
+Null hypothesis significance testing (NHST) is a method of statistical inference where the probability (*p*-value) of observed or more extreme data is compared against the hypothesis of null effect ($H_0$). $H_0$ represents the effect that researchers aim to reject and can correspond to a single-point value or a defined range. In the Neyman-Pearson approach to NHST, the observed *p*-value is compared with a pre-established $\alpha$ (usually $\alpha$ = 0.05). If the observed *p-*value is smaller than the pre-established $\alpha$, the researcher can claim that statistical significance has been reached and act as if $H_0$ were false[^02_chapter-1] with a maximum error rate corresponding to $\alpha$. Statistical significance (i.e., *p* \< $\alpha$) should not be confused with practical significance since it only means that the observed data is extreme enough such that an effect as extreme or more extreme than has been observed would occur less than 5% of the time, if $H_0$ was true [@greenland2016]. One interesting observation is that over 90% of published studies using NHST in biomedicine and psychology reported significant findings (i.e., *p* \< $\alpha$) [@fanelli2010; @sterling1995; @ioannidis2019]. Similarly, it has been observed that between 70% and 82% of published studies in sports science journals reported significant findings [@buttner2020; @twomey_2021]. One conclusion that can be drawn based on this data is that researchers in these disciplines plan and design studies that usually reject $H_0$ because their studies examine predominantly true effects[^02_chapter-2] with high statistical power (henceforth, power).
+
+[^02_chapter-1]: In the Neyman-Pearson approach to NHST, data are used to make decisions about how to act (Neyman & Pearson, 1933). Researchers who rely on this approach should be interested in deciding to at least tentatively act as if one of possible hypotheses is true. Thus, when researchers either “accept” or “reject” a hypothesis, researchers do not aim to communicate any belief or conclusion about the tested hypothesis but rather a basic statement that the observed data corroborates the tested prediction, or not.
+
+[^02_chapter-2]: Authors refer to true effects when there is an effect at the population level, which would be known if researchers could collect data from the entire population of interest.
+
+However, it is unlikely that the high proportion of significant findings in these fields are solely due to high-quality research designs and testing true effects. One key fact that should render researchers skeptical about the replicability of prior findings is when a body of literature produces more significant findings than expected based on the power of the study designs [@scheel2022; @sterling1959] (see @tbl-tbl2.1 for the definition of replicability). For instance, while in psychology over 90% of published studies reported significant findings, the average power to detect a medium effect size has been estimated to barely reach 50% [@cohen1962; @fraley2014] or even lower [@bakkerrulesgame; @stanleywhatmetaanalyses2018]. An excess of significant findings is problematic, and indicates that other factors play a role that biases the proportion of significant findings in the published literature. Three main factors identified in the literature are publication bias, including reviewer bias and the file-drawer problem [@mahoney1977; @rosenthal1979]; questionable research practices (QRPs), including HARKing and *p*-hacking [@bakkerrulesgame; @john2012; @simmons2011; @kerr1998], and studies with underpowered designs [@bakkerrulesgame; @button2013; @fraley2014; @maxwell2004], among others [@bird2021; @bishop2020; @oberauer2019] (see @tbl-tbl2.1 for definitions). Together, these factors contribute to the probability that a published significant finding is actually a false positive, and consequently, the systematic presence of these issues in a body of literature is likely to hinder its replicability.
+
+| Concept | Definition |
+|:---------------------|--------------------------------------------------|
+| Excess of significance findings | The phenomenon whereby a body of literature produces a higher percentage of significant findings than should be expected given the average power of the design of these studies. |
+| Statistical power | The probability of a statistical test rejecting $H_0$ when it is false—that is, the probability of obtaining a significant finding—. It depends on the given effect size of interest, the number of participants/observations and $\alpha$ [@cohen1992]. |
+| Replicability | Refers to testing the reliability of a prior finding using the same methods and statistical analysis as in the original study, but collecting new data [@nosek2022]. It differs from reproducibility in that the latter refers to testing the reliability of a prior finding using the same data and same statistical analysis. |
+| Publication bias | Publishing behaviors that give studies that find support for their tested hypotheses a higher chance of being published, as opposed to replication studies and non-significant findings. These behaviors include editors and reviewers selectively publishing studies with significant findings—reflecting reviewer bias [@mahoney1977]— and researchers deciding not to submit studies with non-significant findings—reflecting the file-drawer problem [@rosenthal1979]—. |
+| Questionable Research Practices (QRPs) | A set of research behaviors that can spuriously increase the probability of finding evidence in support of a hypothesis [@simmons2011]. Some forms of QRPs include HARKing and *p*-hacking [@john2012; @simmons2011]. |
+| HARKing | A form of QRP that involves the post hoc formulation of the Hypothesis After the Results are Known [@kerr1998]. |
+| *P*-hacking | A form of QRP that exploits flexibility in data analysis to obtain significant findings [@simmons2011]. Examples of *p-*hacking include optional stopping, inclusion or exclusion of data on the basis of post hoc criteria, and multiple testing [@john2012; @simmons2011]. |
+
+: Definitions of key concepts. {#tbl-tbl2.1}
+
+These aforementioned issues raise concerns about the credibility of scientific findings and sparked interest in replicability across scientific fields such as psychology and pre-clinical cancer biology [@camerer2016; @camerer2018; @errington2021; @klein2014; @osc2015]. One of the first attempts to systematically replicate study findings was the Open Science Collaboration [-@osc2015] which set out to replicate 100 primary findings published in three high-impact psychology journals; strikingly, although 97% of the original studies reported significant findings, only 37% of the replication studies yielded a significant finding in the same direction as the original study. This project was followed by other replication attempts in psychology [@klein2018], social sciences [@camerer2018] and economics [@camerer2016] with replication rates of 54%, 62% and 61%, respectively. Despite these developments in other fields, replication studies are still very rare in sports science [@halperin2018]. This might be in part not only due to the difficulties in conducting replication studies observed across disciplines [@camerer2018; @errington2021; @halperin2018], but also due to particular features of sports science research. Firstly, it is difficult to conduct replications of published studies that require long-term observations/interventions (e.g., multiple exposures to altitude training), expensive equipment and samples with unusual traits (e.g., elite athletes). Secondly, replication studies may require expertise that only a few researchers have, such as the study of motoneuron adaptations to resistance training by using high-density electromyography analysis [@delvecchio2019]. Finally, the limited availability of original raw data, inaccurate explanations of procedures or methods, and poor reporting practices in the original study hinder the assessment of replicability [@errington2021; @nosek2022]. Before performing a large-scale replication project in sports science, it seems reasonable to first evaluate the extent to which methodological issues that may influence the replicability of the published literature are prevalent.
+
+To date, few studies have investigated the presence of the aforementioned methodological issues in sports science [@Abt2020; @borg_sharing_practices; @buttner2020; @knudson2011; @vagenas2018]. Their findings have raised the first warning signs that our scientific field is likely to face a problem with replicability due to an overwhelming proportion of significant findings, small sample sizes and lack of research data availability [@Abt2020; @borg_sharing_practices; @buttner2020; @knudson2011; @vagenas2018]. However, the consequences of methodological issues such as publication bias, QRPs, and studies with underpowered designs, which are known to increase the number of false positives in the published literature, have been overlooked. Therefore, the purpose of the current review is to discuss the potential consequences of these aforementioned methodological issues on the replicability of sports and exercise science findings and offer potential solutions to combat this in the future. We hope that this review will encourage other researchers to examine the presence of these and other methodological issues in larger literature bodies, conduct replication studies where needed, and increase the adoption of Open Science practices, such as conducting a priori power analyses, and making research data available to facilitate replicability.
+
+## Methodological issues
+
+In line with previous findings in biomedicine and psychology [@ioannidis2005; @fanelli2010] Büttner et al. [-@buttner2020] reported that out of 129 studies from sports and exercise medicine journals, 106 (82.2%) reported significant findings. For this percentage to be a true representation of the studies performed in the field, both power and the proportion of true hypotheses tested must exceed 80% [@scheel2022]. In other words, nearly all hypotheses that sports and exercise researchers test must examine a true effect, and either the effects investigated or the sample sizes used must be consistently large to achieve the desired power (i.e., $\geq$ 80%) [@scheel2022]. In the following sections, we will discuss why 82% significant findings in the literature should be interpreted with caution.
+
+### Publication bias and questionable research practices
+
+One way to objectively examine the reliability of a set of findings is to quantify the evidential value of a body of literature [@lakens2017]. Evidential value is determined by the number of studies examining true and false effects, the power of the studies that examine true effects, the frequency of type I error rates (and how they are inflated by *p*-hacking) and publication bias [@lakens2015; @simmons2017; @simonsohn2014]. Fortunately, issues relating to the power of the studies, *p*-hacking, and publication bias can be explored via the distribution of reported *p*-values [@simmons2017; @simonsohn2014]. For example, when $H_0$ is true, *p*-values between the interval 0-1 should be equally likely in a two-sided hypothesis test regardless of the sample size, yielding a uniform distribution [@hung1997; @lakens2015; @simonsohn2014] (@fig-fig2.1-1). In other words, when $H_0$ is true, a *p*-value of 0.01 is just about as likely to be observed as a *p*-value of 0.9.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-fig2.1
+#| fig-cap: "Distribution of *p*-values over: (a) the interval 0-1 and (b) the interval 0-0.05 when $H_0$ is true. 1000 *p*-values were generated for simulated comparisons with an unpaired *t*-test for statistical difference between two samples of 60 participants each. Red line denotes statistical significance at *p* < 0.05 and the number of significant *p*-values representing type I errors."
+#| fig-subcap: true
+#| fig-subrefs: true
+#| layout-ncol: 2
+#| fig-align: center
+#| fig-show: hold
+#| fig-height: 3
+#| fig-width: 5
+
+library(here)
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+library(ggpubr)
+
+source(here("r_scripts", "simulations", "simulation_fig1.R"))
+
+# Example: df_hO should exist before running this code
+# Number of p-values below 0.05
+total <- sum(df_hO$p < 0.05)
+
+# Distribution of p-values under the null hypothesis over [0,1] interval 
+a1 <- df_hO %>% ggplot(aes(x = p)) + 
+  geom_histogram(bins = 30, fill = "white", color = "black") +
+  scale_x_continuous(breaks = seq(0, 1, by = 0.1), expand = c(0.02, 0.02)) +
+  scale_y_continuous(breaks = seq(0, 80, by = 10), expand = c(0.02, 0.02)) +
+  coord_cartesian(ylim = c(0, 80), xlim = c(0, 1)) +
+  theme(panel.grid = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black", size = 10),
+        axis.title.y = element_text(size = 10)) +
+  annotate("text", x = 0.7, y = 70, label = "Sample size: 60", size = 3) +
+  annotate("text", x = 0.7, y = 64, label = "italic(p) < 0.05: 47", parse = TRUE, size = 3) +
+  xlab(NULL) + ylab("Frequency") +
+  geom_vline(xintercept = 0.05, linetype = "solid", colour = "red")
+
+psignificant <- df_hO %>% filter(p < 0.05)
+
+# Distribution of p-values under the null hypothesis over [0,0.05] interval 
+b1 <- psignificant %>% ggplot(aes(x = p)) + 
+  geom_histogram(bins = 10, fill = "white", color = "black") +
+  scale_x_continuous(breaks = seq(0, 0.05, by = 0.01), expand = c(0.004, 0.004)) +
+  scale_y_continuous(breaks = seq(0, 80, by = 10), expand = c(0.02, 0.02)) +
+  coord_cartesian(ylim = c(0, 80), xlim = c(0, 0.05)) +
+  theme(panel.grid = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black", size = 10),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  xlab(NULL) + ylab(NULL)
+
+a1
+b1
+```
+
+However, when the alternative hypothesis is true ($H_1$), the distribution of *p*-values becomes a function of power, thus, the study sample size and the true (but always unknown) effect size [@cumming2008; @hung1997]. Sample size is therefore an important factor when evaluating the distribution of *p*-values in the literature. Suppose there is a true effect between two populations with a Cohen’s *d* effect size of 0.5 and we perform an unpaired *t*-test to test this difference in three different sample sizes (i.e., 10, 30 and 60 participants per group). As we can see in @fig-fig2.2-1, a sample size of 10 per group and a true effect size *d* of 0.5 yields a power of 18%, which means that out of 1000 replications, only 180 should be expected to reach statistical significance (in the long run), even though there is a true effect to be found. With a sample size of 60 participants per group, power is as high as 78%, meaning that 780 out of 1000 replications reach statistical significance in the long run (@fig-fig2.2). In studies with high power and where a true effect is examined, the likelihood of observing a small *p*-value (e.g., *p* = 0.01) is higher compared to a large *p*-value (e.g., *p* = 0.4) [@cumming2008; @hung1997]. Moreover, as power increases even more, most of the *p*-values are below 0.01 and there are relatively fewer *p*-values between 0.01 and 0.05 (@fig-fig2.2). For instance, while there are 235 *p*-values below 0.01 with a power of 48%, there are as many as 562 with a power of 78% (@fig-fig2.2-3). Consequently, the *p*-value distribution (in sufficiently powered study designs) follows a right-skewed distribution, where larger *p*-values become increasingly less frequent (i.e., it is a monotonically decreasing function) in an unbiased literature– that is, in the absence of *p*-hacking and publication bias [@hartgerink2016]. For this reason, the distribution of *p*-values can be used not only to determine whether a set of homogeneous studies investigates true or false effects, but it can also be used to estimate the average power of the set of studies. Altogether, it should be clear that the small sample sizes observed in sports and exercise science [@Abt2020; @knudson2011] may be a reason for concern, given the high proportion of significant findings that are observed [@buttner2020; @twomey_2021].
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-fig2.2
+#| fig-cap: "Power affects the distribution of *p*-values when $H_0$ is false. 1000 *p*-values were generated for simulated comparisons with an unpaired *t*-test for each sample size. The number of *p*-values below 0.05 and 0.01 and above 0.05 are shown. The power is the percentage of simulations in which the *p*-value reaches significance (i.e., *p* < 0.05) given that $H_1$ is true. Vertical red line denotes statistical significance at *p* < 0.05."
+#| fig-subcap: true
+#| fig-subrefs: true
+#| layout-ncol: 3
+#| fig-align: center
+#| fig-show: hold
+#| fig-height: 3
+#| fig-width: 3
+
+library(here)
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+library(ggpubr)
+
+source(here("r_scripts", "simulations", "simulations_fig2_6_7.R"))
+
+# Calculate power in simulation 1
+power1 <- sum(p1 < 0.05)/nSims1*100
+
+# Number of p-values below a certain threshold
+sim1_smaller_05 <-sum(p1 < 0.05)
+sim1_smaller_01 <- sum(p1 < 0.01)
+sim1_smaller_001 <- sum(p1 < 0.001)
+sim1_larger_05 <- sum(p1 > 0.05)
+
+#Calculate power in simulation 2
+power2 <- sum(p2 < 0.05)/nSims2*100
+
+# Number of p below a specific threshold
+sim2_smaller_05 <- sum(p2 < 0.05)
+sim2_smaller_01 <- sum(p2 < 0.01)
+sim2_smaller_001 <- sum(p2 < 0.001)
+sim2_larger_05 <- sum(p2 > 0.05)
+
+#Calculate power in simulation 3
+power3 <- sum(p3 < 0.05)/nSims3*100
+
+# Number of p below a specific threshold
+sim3_smaller_05 <- sum(p3 < 0.05)
+sim3_smaller_01 <- sum(p3 < 0.01)
+sim3_smaller_001 <- sum(p3 < 0.001)
+sim3_larger_05 <- sum(p3 > 0.05)
+
+#Distribution of p-values over interval 0-1
+a2 <- df_h1 %>% ggplot(aes(x = p1)) + 
+  geom_histogram(bins = 30,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(0,1,by=0.1),expand=c(0.02,0.02))+
+  scale_y_continuous(breaks=seq(0,700,by=100),expand=c(0.02,0.02)) +
+  coord_cartesian(ylim = c(0,700), xlim = c(0,1)) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"))+
+  annotate("text", x=0.7, y=500, label="Sample size: 10", size=3)+
+  annotate("text", x=0.7,y=440, label="Power: 18%", size=3)+
+  annotate("text", x=0.7, y=380, label="italic(p) > 0.05: 821", parse = TRUE, size = 3)+
+  annotate("text", x=0.7, y=320, label="italic(p) < 0.05: 178", parse = TRUE, size = 3) +
+  annotate("text", x=0.7, y=260, label="italic(p) < 0.01: 62", parse = TRUE, size = 3) +
+  xlab(expression(paste("Observed ",italic(p),"-value"))) +
+  ylab("Frequency") +
+  geom_vline(xintercept = 0.05,linetype = "solid",colour = "red")
+
+b2 <- df_h1 %>% ggplot(aes(x = p2)) + 
+  geom_histogram(bins = 30,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(0,1,by=0.1),expand=c(0.02,0.02))+
+  scale_y_continuous(breaks=seq(0,700,by=100),expand=c(0.02,0.02)) +
+  coord_cartesian(ylim = c(0,700), xlim = c(0,1)) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  annotate("text", x=0.7, y=500, label="Sample size: 30", size=3)+
+  annotate("text", x=0.7, y=440, label="Power: 48%", size=3)+
+  annotate("text", x=0.7, y=380, label="italic(p) > 0.05: 516", parse = TRUE, size = 3)+
+  annotate("text", x=0.7, y=320, label="italic(p) < 0.05: 483", parse = TRUE, size = 3) +
+  annotate("text", x=0.7, y=260, label="italic(p) <  0.01: 235", parse = TRUE, size = 3) +
+  xlab(expression(paste("Observed ",italic(p),"-value"))) +
+  ylab(NULL) +
+  geom_vline(xintercept = 0.05,linetype = "solid",colour = "red")
+
+c2 <- df_h1 %>% ggplot(aes(x = p3)) + 
+  geom_histogram(bins = 30,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(0,1,by=0.1),expand=c(0.02,0.02))+
+  scale_y_continuous(breaks=seq(0,700,by=100),expand=c(0.02,0.02)) +
+  coord_cartesian(ylim = c(0,700), xlim = c(0,1))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  annotate("text", x=0.7, y=500, label= "Sample size: 60", size = 3)+
+  annotate("text", x=0.7, y=440, label= "Power: 78%", size=3)+
+  annotate("text", x=0.7, y=380, label="italic(p) > 0.05: 223", parse = TRUE, size = 3)+
+  annotate("text", x=0.7, y=320, label="italic(p) < 0.05: 775", parse = TRUE, size = 3)+
+  annotate("text", x=0.7, y=260, label="italic(p) < 0.01: 562", parse = TRUE, size = 3)+
+  xlab(expression(paste("Observed ",italic(p),"-value"))) +
+  ylab(NULL) +
+  geom_vline(xintercept = 0.05,linetype = "solid",colour = "red")
+ 
+a2
+b2
+c2
+```
+
+Whilst the above assumes an unbiased *p*-value distribution, one explanation for an excess of significant findings in a body of literature that has been raised is publication bias and *p*-hacking[^02_chapter-3] [@francis2012; @franco2014; @simmons2011]. In the presence of publication bias (where non-significant findings are less likely to get published), researchers have incentives to explore post hoc analyses to find a significant *p*-value (i.e., *p*-hacking). If *p*-hacking occurs in the literature, the distribution of reported significant *p*-values adopts different shapes [@lakens2015]. For instance, when researchers resort to optional stopping (when the *H*~0~ is true), the distribution of reported significant *p*-values is right-skewed (i.e., there will be a greater number of *p*-values between 0.04 and 0.05 than between 0.00 and 0.01) (@fig-fig2.3). The lack of a continuous distribution of *p*-values below $\alpha$ of 0.05 and above this threshold indicates the presence of bias in favour of significant findings in the published literature (i.e., publication bias). Therefore, by examining the distribution of *p*-values, it can be determined whether published findings contain evidential value of a true effect, and the extent to which findings in the literature are affected by publication bias and/or *p*-hacking [@simmons2017; @simonsohn2014].
+
+[^02_chapter-3]: Studies with unpowered designs and inflated type I error rates in a body of literature where researchers selectively publish significant findings increases the positive predictive value (the probability that a significant result in the literature is a false positive), which contributes to an excess of significant findings in the scientific literature.
+
+![Distribution of *p*-values over the interval 0-0.1 when $H_0$ is true but in the presence of *p*-hacking. This would reflect the influence of collecting 10 participants and conducting an unpaired *t*-test after each addition until 100 participants are collected. Red line denotes statistical significance at *p* \< 0.05.](figures/fig3.png){#fig-fig2.3}
+
+### Power
+
+In a Neyman-Pearson approach, researchers should use the NHST framework under the assumption of two conditions [@lakensalternative2021]. First, $H_0$ should be plausible enough so that its rejection might be unexpected. Second, researchers use NHST as a methodlogical procedure to make decisions about how to act while controlling error rates. Researchers can limit the frequency of type I and type II errors by choosing $\alpha$ and conducting studies with high-power designs for effect sizes of interest, given that the type II error rate is defined as 1 – power (the higher the power, the lower the type II error rate). To ensure that studies have well-powered designs, researchers should conduct a priori power analyses for a given sample size and effect size of interest (@fig-fig2.4). The value of this approach is discussed below.
+
+![Power of an unpaired *t*-test given a range of sample sizes and effect sizes. Red line denotes an adequate power of 80%.](figures/fig4.png){#fig-fig2.4}
+
+#### Estimating power in sports and exercise sciences
+
+Power has direct implications on replicability because, from a frequentist standpoint, power is also described as the long-run probability of obtaining a significant effect when there is a true effect to be found [@miller2009]. To date, most researchers are familiar with Cohen’s [-@cohen1988] suggestion that study designs should have at least 80% power. Hence, a study design is typically considered adequately powered if it finds a significant effect in 8 out of 10 replications when there is a true effect to be found (although one might argue that, whenever feasible, a higher statistical power is desired). Moreover, according to Fisher [-@fisher1926], a good study should rarely produce a non-significant finding when $H_0$ is false. Therefore, if studies examining true effects are designed with high power, any researcher is more likely to find the same effect when replicating the same procedures with adequate power.
+
+There is, however, concern that studies in sports and exercise science are not adequately powered to detect effects of interest, which are often claimed to be small [@buchheit2016]. It is again worth highlighting the findings from two recent studies [@Abt2020; @buttner2020]; the high proportion (82.2%) of significant findings [@buttner2020] and the small median sample sizes ($n$ = 19) reported in the *Journal of Sports Sciences* [@Abt2020] seem to indicate that, unless all examined effects are large, there might be relatively low power. As we will discuss in the following section, a median sample size of 19 is likely to yield underpowered designs, especially to detect small and medium effect sizes. The main implication of underpowered study designs is that the literature should be filled with a higher proportion of non-significant findings since the published studies would have a low probability of detecting the studied effect [@nosek2017], but this is not the reality. To our best knowledge, only one study has assessed the average power in our field [@speed2000]. This study estimated the median observed power of 108 significance tests from 29 studies using fixed effect sizes based on Cohen’s benchmarks [@cohen1988]. The median observed power was 14%, 65% and 97% for small, medium and large effect sizes, respectively. Furthermore, moving beyond the median power, and looking at individual studies, it was found that no studies had adequate power to detect small effect sizes, only 38% of studies had adequate power to detect a medium effect size, and about 75% of studies had a power of at least 80% to detect large effect sizes. However, one limitation of this method was the use of fix­­­ed effect sizes based on Cohen’s benchmarks which are derived from effects observed in behavioral science [@cohen1988]. It is uncertain whether Cohen’s benchmarks accurately represent effect sizes observed in any given subfield of sports and exercise science [@atkinson2001; @rhea2004; @speed2000]. For instance, Swinton et al. [-@swinton2022] conducted a Bayesian hierarchical meta-analysis to identify specific effect size benchmarks in strength and conditioning interventions and reported that the benchmarks for small, medium and large effect sizes were 0.12, 0.43 and 0.78, respectively. Therefore, sports and exercise researchers should avoid the use of effect sizes based on Cohen’s benchmarks for a priori power analyses and use specific effect sizes derived from meta-analysis [@swinton2022] and if possible, meta-analytic effect sizes adjusted for publication bias since they can also suffer from overestimation [see, for example, @carter2014].
+
+To further elaborate, we provide observed power estimates in our field using a typical effect size and sample size reported in previous research [@Abt2020; @knudson2017]. R code used for this power analysis is available at <https://osf.io/y3482/>. There is reason for caution because of the use of small sample sizes in our field [@Abt2020; @knudson2011]. Besides the small median sample size reported in the *Journal of Sports Sciences* ($n$ = 19) [@Abt2020], four biomechanic and sports science journals had a mean sample size (standard deviation) of 21 (24), 15 (19), 32 (32) and 20 (22) (of 188 studies published in 2009 [@knudson2011]). To see how sample size affects observed power, we will use an effect size *d* of 0.43, which has been reported to be the medium effect size benchmark for effects observed in 679 strength and conditioning intervention studies [@swinton2022]. Suppose we conduct a study to find a true effect size *d* of 0.43 with a sample size of 20 for a paired *t*-test. This within-subject design would yield a power of 45%, implying that if 10 replications were to be conducted, only about 5 would find a significant effect. It is worth noting that for achieving 80% power, a sample size of 44 would be needed if the true effect size was *d* = 0.43. Small sample sizes might be appropriate if the true effect size being estimated is large enough to be reliably observed in such samples [@button2013]; for instance, estimated effect sizes from strength and conditioning interventions might be much larger than those observed in sports performance research [@atkinson2001; @rhea2004]. However, studies with small samples in combination with selective reporting of significant findings are susceptible to overestimating true effect sizes [@anderson_sample_planning]. This means one should be cautious about the observed large effect sizes in the literature, if small studies are the sole source of these estimates [@button2013]. Given the small samples reported in biomechanic and sport and exercise science journals [@Abt2020; @knudson2011], it might therefore be hypothesized that sports and exercise science face a problem with underpowered designs, especially to detect small and medium effect sizes. However, it should be noted that within-subject designs have higher power compared to between-subject designs, given an effect size and sample size [@maxwell2017]. The extent to which within-subject designs can increase power compared to between-subject designs is given by the correlation between observations [@maxwell2017]. This is because correlation is typically positive and higher in within-subject designs compared to between-subject designs. Hence, the higher the correlation between observations, the higher the power achieved. Therefore, between-subject designs may potentially have even less power to detect the effect size of interest than the power estimated from a within-subject design. In the following section, we discuss the consequences of underpowered designs.
+
+#### Consequences of underpowered designs
+
+Whilst low power in itself is caused by low sample size or small effect sizes*,* or both, the consequences of low power should be emphasized here. Firstly, underpowered designs are less likely to find a true effect even if the effect exists at the population level [@fraley2014; @maxwell2008]. This is because small sample sizes contain a high sampling variance, which reduces power. This is demonstrated in @fig-fig2.5, where even though there is a true difference between population A and B (i.e., effect size *d* of 0.5), two of three of the studies do not find a significant effect and thus commit a type II error.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-fig2.5
+#| fig-cap: "Small samples show substantial variation. To illustrate the variability of statistical outcomes derived from small samples, 6 samples of 10 values each at random were drawn from the same two populations as in Figure 2.2. The true effect size d between population A and B is 0.5. The estimated effect size *d* and *p*-value when sample pairs are compared are provided to demonstrate the variability of observed outcomes."
+#| fig-subcap: true
+#| fig-subrefs: true
+#| layout-ncol: 3
+#| fig-align: center
+#| fig-show: hold
+#| fig-height: 3
+#| fig-width: 3
+
+# Load packages
+library(MBESS)
+library(ggplot2)
+library(patchwork)
+library(here)
+
+# Simulate two different populations 
+set.seed(345)
+sim1 <- data.frame(mean = rnorm(n = 1000, mean = 115, sd = 10))
+sim2 <- data.frame(mean = rnorm(n = 1000, mean = 110, sd = 10))
+
+set.seed(001)
+random1 <- sample(1:1000, 10, replace=TRUE)
+random2 <- sample(1:1000, 10, replace=TRUE)
+
+s1 <- sim1[random1, ] 
+s2 <- sim2[random2, ]
+
+dt1 <- data.frame(s1,s2)
+result1 <- t.test(dt1$s1,dt1$s2)
+es1 <- smd(Mean.1= mean(dt1$s1), Mean.2=mean(dt1$s2), s.1=sd(dt1$s1), 
+           s.2=sd(dt1$s2), n.1=10, n.2=10, Unbiased=TRUE)
+
+s1 <- data.frame(s=s1)
+s2 <- data.frame(s=s2)
+s <- rbind(s1,s2)
+s$draw <- rep(c("A","B"),each=10)
+
+# Second draw of 10 samples per population
+# Create 10 random numbers to draw 10 samples (participants) of each population
+set.seed(456)
+random3 <- sample(1:1000, 10, replace=TRUE)
+random4 <- sample(1:1000, 10, replace=TRUE)
+
+s3 <- sim1[random3, ]# Draw 10 random samples of each population 
+s4 <- sim2[random4, ]# Draw 10 random samples of each population 
+
+dt2 <- data.frame(s3,s4)
+result2 <- t.test(dt2$s3,dt2$s4)
+es2 <- smd(Mean.1= mean(dt2$s3), Mean.2=mean(dt2$s4), s.1=sd(dt2$s3), 
+           s.2=sd(dt2$s4), n.1=10, n.2=10, Unbiased=TRUE)
+
+s3 <- data.frame(s=s3)
+s4 <- data.frame(s=s4)
+s_2 <- rbind(s3,s4)
+s_2$draw <- rep(c("A","B"),each=10)
+
+
+# Third draw of 10 samples per population
+# Create 10 random numbers to draw 10 samples (participants) of each population
+set.seed(189)
+random5 <- sample(1:1000, 10, replace=TRUE)
+random6 <- sample(1:1000, 10, replace=TRUE)
+
+s5 <- sim1[random5, ]
+s6 <- sim2[random6, ] 
+
+dt3 <- data.frame(s5,s6)
+result3 <- t.test(dt3$s5,dt3$s6)
+es3 <- smd(Mean.1= mean(dt3$s5), Mean.2=mean(dt3$s6), s.1=sd(dt3$s5), 
+           s.2=sd(dt3$s6), n.1=10, n.2=10, Unbiased=TRUE)
+
+s5 <- data.frame(s=s5)
+s6 <- data.frame(s=s6)
+s_3 <- rbind(s5,s6)
+s_3$draw <- rep(c("A","B"),each=10)
+
+# Create Figure 5
+title_a5 <- expression(paste("Effect size ", italic(d), " = 1.34 ",  italic(p), " = 0.006"))
+a5 <- s %>% ggplot(aes(y=s,x=draw)) +
+  geom_boxplot(color="grey",width=0.5)+
+  geom_jitter(width = 0.1)+
+  scale_y_continuous(breaks=seq(80,150,by=10),limits = c(80,150),expand=c(0,0))+
+  coord_cartesian(ylim = c(80,150))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        plot.title = element_text(size=10,hjust = 0.5)) +
+  ylab("Values")+
+  xlab("Samples")+
+  ggtitle(label = title_a5)
+
+title_b5 <- expression(paste("Effect size ", italic(d), " = 0.27 ",  italic(p), " = 0.54"))
+b5 <- s_2 %>% ggplot(aes(y=s,x=draw)) +
+  geom_boxplot(color="grey",width=0.5)+
+  geom_jitter(width = 0.2)+
+  scale_y_continuous(breaks=seq(80,150,by=10))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        plot.title = element_text(size=10,hjust = 0.5))+
+  xlab("Samples")+
+  ggtitle(label = title_b5)
+
+title_c5 <- expression(paste("Effect size ", italic(d), " = 0.25 ", italic(p), " = 0.30"))
+c5 <- s_3 %>% ggplot(aes(y=s,x=draw)) +
+  geom_boxplot(color="grey",width=0.5)+
+  geom_jitter(width = 0.2)+
+  scale_y_continuous(breaks=seq(80,150,by=10))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        plot.title = element_text(size=10,hjust = 0.5))+
+  xlab("Samples")+
+ggtitle(label = title_c5)
+
+a5
+b5
+c5
+```
+
+```{r}
+#| include: false
+
+# The formula for ODR is as follows: ODR = a*(1-t) + (1-B)*t, 
+# where (1-B) = statistical power, a = alpha level, t = proportion of true hypothesis
+alpha <- 0.05
+beta <- 0.8
+t <- 0.8
+
+alpha*(1-t) + (1- beta)*t # ODR
+```
+
+```{r}
+#| include: false
+# Function to compute FPRP
+fprp <- function(alpha, beta, t) {
+  FPRP <- alpha*(1 - t)/(alpha*(1 - t) + (1 - beta)*t)
+  return(FPRP)
+}
+
+# Example usage:
+alpha <- 0.05      # significance level
+beta  <- 0.8    # Type II error rate (i.e., power = 0.80)
+t    <- 0.8     # prior probability that the hypothesis is true
+
+fprp(alpha, beta, t)*100
+```
+
+Secondly, underpowered designs also increase the proportion of false positives in a body of literature, known as the *false positive report probability* (FPRP; @wacholder2004) and depends on the probability of the effect being true, the power and $\alpha$. To see how this plays out, let us introduce the concept of Observed Discovery Rate, which is the percentage of studies reporting a significant finding and can be calculated as follows [@scheel2022]:
+
+$$
+ODR = \alpha × (1 − t) + (1 − \beta) × t
+$$ {#eq-eq2.1}
+
+where $\alpha$ is the type I error rate, *t* is the proportion of true hypotheses and 1 − $\beta$ is the power of a test. This component, $\alpha$ $\times$ (1 - $t$), represents the number of type I errors, while the second component, (1 $-$ $\beta$) $\times$ $t$, represents the number of significant results that reflect true effects. From this follows that we can estimate the proportion of type I error as follows [@wacholder2004]:
+
+$$
+FPRP = \frac{\alpha × (1 − t)}{\alpha × (1 − t) + (1 − \beta) × t}
+$$ {#eq-eq2.2}
+
+Suppose that 100 sports science studies investigate hypotheses that are all true ($t$ = 1), have an average power of 45%—as previously calculated—and use an $\alpha$ level of 0.05. In this scenario, 45 out of 100 studies (5 $\times$ (100 $-$ 100) $+$ (100 $-$ 55) $\times$ 100) would report a significant effect. Of those, all would correspond to true effects (100 $-$ 55) $\times$ 100) and none would correspond to type I errors. (5 $\times$ (100 $-$ 100)). Consequently, the proportion of type I errors among the significant findings would therefore be 0% (0/(0 $\times$ 45)). Now suppose that only 80% of hypotheses are true, while power remains 45%. In this case, 37 out 100 studies (5 $\times$ (100 $-$ 80) $+$ (100 $-$ 55) $\times$ 80) report a significant result. Of those, 36 would correspond to true effects (100 $-$ 55) $\times$ 80) and 1 would correspond to a type I error (5 $\times$ (100 $-$ 80)). The proportion of type I errors among significant findings would be approximately 3% (1/1 $+$ 36). Finally, consider the same scenario in which 80% of hypotheses are true but power is reduced to 20%. In this case, 17 out 100 studies (5 $\times$ (100 $-$ 80) $+$ (1 $-$ 80) $\times$ 80) would report a significant result. Of those, 16 would correspond to true effects (100 $-$ 80) $\times$ 80) and 1 would correspond to a type I error (5 $\times$ (100 $-$ 80)). The proportion of type I errors among significant results would therefore rise to approximately 6% (1/(1 $\times$ 16)). These examples illustrate how the proportion of type I errors among significant findings depends critically on the average power of studies and the probability that the hypotheses being tested are true.
+
+Comparatively speaking, although an unbiased literature can only be achieved by publishing all study findings, irrespective of the *p*-value, the reliability of a body of literature is higher when the power is 80% rather than 20%. In fact, a set of underpowered studies investigating the same effect and all reporting significant findings is so unlikely that the findings become literally improbable [@fraley2014]. Suppose that a set of 5 studies with an average power of 45% has reported significant effects when $H_0$ was false. The probability of all 5 studies finding a significant effect would be 1.85% (0.45^5^). Therefore, if the power observed in sports and exercise science studies is as low as hypothesized [@Abt2020], we may expect an elevated number of false positives in sets of underpowered studies within the same scope. Given the observed high proportion of significant findings discussed [@buttner2020], an elevated number of false positives seems a plausible explanation for a significant proportion of study findings published in this field.
+
+Thirdly, the effect size provided by a study with an underpowered design in the presence of publication bias is likely to be overestimated [@button2013; @camerer2018; @halsey2015; @osc2015]. As observed in @fig-fig2.6, when a significance test has low power due to a small sample size, a significant effect size will only be found when the effect size is relatively extreme [@halsey2015]. However, when power is augmented by taking more observations, the estimated effect size becomes closer to the true effect size [@halsey2015] (@fig-fig2.7). For instance, both the Open Science Collaboration [-@osc2015] and the Social Science Replication Project [-@camerer2018] conducted replications with higher-power designs than the original studies; one of the main findings was that both replication projects observed that the mean effect size of the replicated studies was approximately 50% of that reported in the original studies [@osc2015; @camerer2018]. Because of the observed small sample sizes reported in sports and exercise sciences [@Abt2020; @knudson2011], it is likely that the reported effect sizes are overestimated, further compounding the issue with low power. Another consequence is that if published effect sizes are overestimated and therefore do not reflect the true distribution of effect sizes, meta-analyses are compromised [@kvarven_2020].
+
+```{r}
+#| echo: false
+#| message: false
+#| #| warning: false
+#| label: fig-fig2.6
+#| fig-cap: "Sample size affects the estimation of the true effect size. Using the same data simulated as in Figure 2.2, 1000 effect sizes were computed. The histograms show the distribution of effect sizes for three different sample sizes. As sample size increases, the estimated effect size becomes closer to the true effect size *d* of 0.5."
+#| fig-subcap: true
+#| fig-subrefs: true
+#| layout-ncol: 3
+#| fig-align: center
+#| fig-show: hold
+#| fig-height: 3
+#| fig-width: 3
+
+# Load packages
+library(tidyverse)
+library(patchwork)
+library(here)
+
+# Load data
+source(here("r_scripts", "simulations", "simulations_fig2_6_7.R"))
+
+# Fig6: Distribution of ES 
+# Sample of 10 per group
+a6 <- df_h1 %>% ggplot(aes(x = d_all1)) + 
+  geom_histogram(bins = 10,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(-1.5,3,by=0.5)) +
+  coord_cartesian(ylim = c(0,600), xlim = c(-1.5,3), expand = TRUE) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"))+
+  annotate("text", x=2.2, y=300, label="Sample size: 10 \n Power: 18%",size = 3) +
+  xlab(expression(paste("Effect size ",italic(d)))) +
+  ylab("Frequency")
+
+#Sample of 30 per group
+b6 <- df_h1 %>% ggplot(aes(x = d_all2)) + 
+  geom_histogram(bins = 10,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(-1.5,3,by=0.5)) +
+  coord_cartesian(ylim = c(0,600), xlim = c(-1.5,3), expand = TRUE) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  annotate("text", x=2.2, y=300, label="Sample size: 30 \n Power: 48%",size = 3) +
+  xlab(expression(paste("Effect size ",italic(d)))) +
+  ylab(NULL) 
+
+#Sample of 60 per group
+c6 <- df_h1 %>% ggplot(aes(x = d_all3)) + 
+  geom_histogram(bins = 10,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(-1.5,3,by=0.5)) +
+  coord_cartesian(ylim = c(0,600), xlim = c(-1.5,3), expand = TRUE) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  annotate("text", x=2.2, y=300, label="Sample size: 60 \n Power: 78%",size = 3) +
+  xlab(expression(paste("Effect size ",italic(d)))) +
+  ylab(NULL)
+
+a6
+b6
+c6
+```
+
+In addition, the overestimation of effect sizes is in itself a cause of concern when conducting a priori power analyses [@lakens_followup_bias; @anderson_sample_planning]. The rationale for conducting an a priori power analysis is to obtain an estimate of the sample size needed given an effect size of interest and intended power. However, if the effect size used for an a priori power analysis is overestimated, researchers may end up obtaining a smaller sample size and thus eventually achieving less power than intended [@anderson_sample_planning]. This is especially problematic when studies use small sample sizes and in the presence of publication bias because only overestimated effect sizes will be published. For example, suppose a researcher wants to test the effect of a treatment on two independent samples and the true effect size *d*, which is unknown, is 0.5. The researcher wants to obtain the sample size required to achieve 80% power and uses an overestimated effect size *d* of 1.34 from a previous underpowered study (@fig-fig2.6-1). Thus, the researcher finds out that a sample size of 20 (i.e., 10 participants per group) is needed to achieve 80% power and detect an effect size *d* of 1.34 for an unpaired *t*-test. However, although the intended power was 80%, the overestimated effect size (i.e., effect size *d* = 1.34) yielded a true power of 19% (R code available at <https://osf.io/y3482/>). Thus, conducting a power analysis based on an inflated effect size can lead to underpowered studies. Moreover, smaller sample sizes produce wider CIs around effect size estimates, increasing uncertainty. When combined with publication bias, this pattern favors the dissemination of studies that overestimate the true effect size, further inflating effects in the published literature. This situation does not only occur when conducting a priori power analyses based on effect sizes from previous studies with underpowered designs, but also when the effect size of interest is derived from a pilot study—known as follow-up bias [@lakens_followup_bias]—. Consequently, researchers should take care when choosing the effect size for an a priori power analysis. Because it is practically impossible to know the true effect size (and if it were known, there would be no need to collect additional data), researchers must instead determine an expected effect size. The selected effect size may be informed by theoretical considerations or computational models [@lakenssamplejustification]. As a last resort, researchers may rely on effect sizes estimated from meta-analyses or based on the effect size estimated from a previous study (preferably adjusted for publication bias). In such cases, however, researchers should use adjusting methods that account for the overestimation of the effect size due to small sample sizes and publication bias when conducting an a priori power analysis [@anderson_sample_planning; @simonsohn2014]. Although the most robust approach is to base the a priori power analysis on the smallest effect size of interest, this approach is also the most challenging [@lakenssamplejustification; @anvari_sesoi].
+
+Lastly, underpowered designs also decrease the precision of parameter estimates [@halsey2015; @maxwell2008] (@fig-fig2.7). This is because the width of CIs around the parameter estimate depends on the standard deviation and the number of observations. Thus, larger sample sizes produce smaller standard deviations. The larger the CI around a parameter estimate, the less certain one can be that the estimate approximates the corresponding true population parameter [@asendorpf2013]. As we can observe in @fig-fig2.7, the width of a CI decreases as the sample size increases (which also increases the statistical power). Effect sizes and CIs obtained with larger samples are more precise than those obtained with smaller ones [@asendorpf2013]. Similarly, it has been reported that out of a sample of 290 between-subject effect size *d* from 5 psychology journals, 83% of the effect sizes sampled had CI widths that were larger than the reported effect sizes and 26% were twice as large as the reported effect sizes [@brand2016]. As a consequence of the small sample sizes reported in sports and exercise science journals [@Abt2020; @knudson2011], it might be hypothesized that CI width might be larger than in other research areas with larger sample sizes such as psychology, further compounding potential issues with the precision of our observations. 
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-fig2.7
+#| fig-cap: "Sample size affects the estimation of CIs. Using the same data simulated as in Figure 2.2, 1000 95% CIs were computed. The histograms show the distribution of these 95% CIs for the same study with three different sample sizes. As sample size increases, both the range and the scatter of the CI decrease, reflecting increased power and greater precision from larger sample sizes."
+#| fig-subcap: true
+#| fig-subrefs: true
+#| layout-ncol: 3
+#| fig-align: center
+#| fig-show: hold
+#| fig-height: 3
+#| fig-width: 3
+
+# Load packages
+library(tidyverse)
+library(patchwork)
+library(here)
+
+# Load data
+source(here("r_scripts", "simulations", "simulations_fig2_6_7.R"))
+
+# Figure 7: Distribution of width of 95%CI
+# Calculate width of CI
+df_ci <- df_h1 %>% select(ci_lower1,ci_upper1,
+                          ci_lower2,ci_upper2,
+                          ci_lower3,ci_upper3) %>% 
+  transmute(ciwidth1=ci_upper1-ci_lower1,
+            ciwidth2=ci_upper2-ci_lower2,
+            ciwidth3=ci_upper3-ci_lower3)
+
+#Sample of 10 per group
+a7 <- df_ci %>% ggplot(aes(x = ciwidth1)) + 
+  geom_histogram(bins = 12,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(1.6,2.4,by=0.2)) +
+  coord_cartesian(ylim = c(0,800), xlim = c(1.6,2.4), expand = TRUE) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black")) +
+  annotate("text", x=2.2, y=600, label="Sample size: 10 \n Power: 18%",size=3) +
+  ylab("Frequency") +
+  xlab("Width of 95% CIs")
+
+#Sample of 30 per group
+b7 <- df_ci %>% ggplot(aes(x = ciwidth2)) + 
+  geom_histogram(bins = 10,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(0.9,1.3,by=0.1)) +
+  coord_cartesian(ylim = c(0,800), xlim = c(0.9,1.3), expand = TRUE) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  annotate("text",x=1.2, y=600, label="Sample size: 30 \n Power: 48%",size=3) +
+  ylab(NULL) +
+  xlab("Width of 95% CIs")
+
+#Sample of 60 per group
+c7 <- df_ci %>% ggplot(aes(x = ciwidth3)) + 
+  geom_histogram(bins = 10,fill="white",color="black") +
+  scale_x_continuous(breaks=seq(0.5,1,by=0.1)) +
+  coord_cartesian(ylim = c(0,800), xlim = c(0.5,1), expand = TRUE) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"),
+        axis.line.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  annotate("text",x=0.9, y=600, label="Sample size: 60 \n Power: 78%",size=3)+
+  xlab("Width of 95% CIs")
+
+a7
+b7
+c7
+```
+
+#### Use of a priori power analyses in sports and exercise science
+
+Despite the core importance of power in NHST, the use of a priori power analyses is still scarce in sports and exercise science [@Abt2020]. In 2000, it was reported that of 40 studies published in the *Journal of Science and Medicine in Sport*, no study included an a priori power analysis [@speed2000]. More recently, Abt et al. [-@Abt2020] reported that only 10% of studies (12 out of 120) published in the *Journal of Sports Sciences* included such practice. Although this reflects an increased use of power analysis, it is clearly not a standard practice in our field. This is in marked contrast with the recent findings from Collins & Watt [-@collins2021], who observed that 71% (152 out of 214) of psychologists self-reported to have used power analysis for sample size planning. It is worth noting, however, that such practices have not been consistently adopted throughout the discipline’s history. There might be several reasons as to why a priori power analyses are not standard practice in our field [@asendorpf2013; @bakker2016; @collins2021; @lakenssamplejustification]. Firstly, researchers do not sufficiently understand this statistical concept and its importance in NHST [@collins2021]. This is reasonable to assume as all studies (12 out of 12) from Abt et al. [-@Abt2020] that included a priori power analyses failed to disclose full information on the statistical test to be conducted to detect the effect size of interest and 4 failed to include convincing rationale for why the given effect size was chosen. It has been argued that if researchers do not have sufficient understanding of power, they cannot be expected to successfully calculate and accurately report power analysis [@collins2021]. Secondly, researchers may rely on intuition, rules of thumb or prior practices also known as heuristics to determine study sample sizes [@bakker2016; @lakenssamplejustification]. For instance, of 187 psychology researchers, 45 (23%) mentioned some rule of thumb (e.g., 20 subjects per condition) and 41 (21%) based their sample sizes on the common practice in their field of research [@bakker2016]. These practices might be a major concern especially in scientific disciplines using small sample sizes and investigating small and medium effects sizes because this combination would produce studies with underpowered designs as previously discussed. Thirdly, a common practice among researchers to determine the number of participants is optional stopping [@john2012; @simmons2011]. This practice involves stopping collecting data earlier than planned because a significant effect was found (@fig-fig2.8). This can occur in situations, for example, where a researcher who has already collected 30 observations per condition, and then tests for significance every 5 or 10 per condition observations [@simmons2011]. However, such practice is considered a form of QRP because it leads to overestimated effect sizes and increased type I error rates [@simmons2011]. Instead, sample size planning should be based on a goal of achieving adequate power or precise parameter estimates [@asendorpf2013; @lakenssamplejustification; @maxwell2008]. Therefore, given the scarce use of sample size planning based on a priori power analyses and its lack of accurate reporting [@Abt2020; @collins2021], it might be suggested that researchers in our field have a poor understanding of power and the consequences of low power designs on type I error rate and effect sizes [@button2013; @maxwell2004]. Furthermore, the scarcity of a priori power analyses also suggests that sports and exercise researchers may rely on either heuristics or optional stopping for sample size planning. To improve, sports and exercise researchers might consider either consulting a statistician to help with the sample size justification for a new study, or educate themselves in best practices [for a review, see @lakenssamplejustification].
+
+![Illustrative simulation of *p*-values obtained by a researcher who continuously adds a participant to each of two sample groups and conducts an unpaired *t*-test after each addition. The data were simulated under the true effect of 0, meaning $H_0$ is true. The horizontal red line denotes statistical significance at *p* \< 0.05. Note that sample size refers to the number of participants in each of the two groups.](figures/fig8.png){#fig-fig2.8}
+
+## Availability of research data
+
+Availability of research data is a core scientific principle not only because it contributes to cumulative science [@lakens_calculating_es; @lakens2016] and enables computational reproducibility [@artner2021; @nosek2022], but also because it enables researchers to design novel studies that help assess the replicability of published findings [@errington2021; @nosek2022]. For instance, although the Reproducibility Project: Cancer Biology attempted to investigate the replicability of 193 experiments from 53 studies, only 50 experiments could be repeated [@errington2021]. Among other barriers identified to hinder replicability [@erringtonchallenges2021], only 4 out of 193 original studies reported key descriptive and statistical results needed to compute effect sizes, conduct a priori power analyses and assess the success of a replication. Moreover, authors were unable to obtain these data for 68% of the experiments despite contacting the authors of the original studies. Data sharing, therefore, helps to design informative replication studies. Cumulatively, both poor reporting practices and a lack of data sharing hinder the assessment of replicability.
+
+### Data sharing practices
+
+Empirical data shows that, in general, sports and exercise researchers are reluctant to engage in data sharing practices [@borg_sharing_practices]. Indeed, Borg et al. [-@borg_sharing_practices] reported that only 13 of 299 studies published in 2019 in quartile one sports science journals shared data. Yet, this is not surprising given that only 5 of 286 studies stated that data were available upon request. The lack of data sharing practices might be problematic for several reasons. Firstly, it has been reported that about 50% of published studies in psychology contain at least one inconsistent *p*-value and about 13% contain a grossly inconsistent *p*-value [@bakker2011; @nuijten2016]. Secondly, the willingness to share research data has been related to the strength of the statistical significance and a higher prevalence of reporting statistical errors [@wicherts2011]. Interestingly, *p*-values in the interval between 0.03 and 0.05 (which are less likely to occur when there is a true effect to be found), were more common in papers which did not share data (16.7%) than in papers which did (9.1%). Thirdly, integrity surveys among researchers have revealed that the prevalence of QRPs was in the range of 33-51% [@fanelli2009; @gopalakrishna2022]. More serious forms of misconduct, including fabrication and falsification of data or study findings have been reported to range between \~ 2 and 4% [@fanelli2009; @gopalakrishna2022]. An example of potential data fabrication in sports and exercise science involves a series of resistance-training studies by Barbalho et al. which contained several anomalous patterns. These anomalies prompted a community-wide investigation into the reported results [@vigotsky]. The subsequent analyses identified improbable small SDs, large and consistent effect sizes, similar data structures across studies and effects that are inconsistent with those typically observed in the literature. Anecdotally, this investigation was made possible because one of Barbalho's coauthors had private access to the raw data, as the data were not publicly available. In light of these findings, there is a clear need to adopt data sharing practices that enable the research community to reproduce and independently verify published study findings.
+
+### Reporting practices
+
+The *p*-value of a significance test is the main statistic used for deciding whether $H_0$ can be rejected or not. However, researchers’ poor understanding of the NHST often leads to the misconception that significance means a large effect, whilst no significance means small effect or no effect [@greenland2016; @motulsky2014]. In studies with underpowered designs, non-significant findings are hardly indicative of the absence of an effect, and with large sample sizes, effect sizes can be significant but practically irrelevant [@anvari_sesoi]. It has therefore been recommended to combine the *p*-value along with effect sizes and their confidence intervals (CIs) [@sullivan2012; @cumming2013]. An effect size provides quantitative information about the magnitude of the relationship or effect studied and its CI indicates the uncertainty of that measure by presenting the range within which the true effect size is likely to lie [@halsey2015]. Furthermore, effect sizes and their CIs allow findings from several studies to be combined in the form of meta-analysis to obtain more precise effect sizes [@halsey2015; @lakens_calculating_es]. Despite this, the reporting of effect sizes and CI is usually omitted in sports and exercise science [@speed2000; @vagenas2018]. For instance, Speed & Andersen [-@speed2000] reported that only 14% (4 out of 29) of studies published in the *Journal of Science and Medicine in Sport* reported effect sizes. Similarly, a more recent study observed that only 39% of studies published in the *Journal of Applied Biomechanics* in 2014 reported effect sizes [@vagenas2018]. However, the specific types of effect sizes considered in these two reviews are unclear. Speed & Andersen [-@speed2000] refer to "effect size" without specifying whether they included raw, standardised, or both types of effect sizes. In contrast, Vagenas, Palaiothodorou and Knudson [-@vagenas2018] counted effect sizes based on studies that employed analyses beyond descriptive statistics or bivariate correlation. These findings suggest an overreliance on *p*-values to interpret study findings despite the consequences of small sample sizes on the reliability of statistical results [@button2013; @maxwell2004].
+
+Besides the quantitative information, reporting effect sizes and their CI or at least including sufficient information to calculate them, also contributes to improving the replicability of findings. For instance, researchers attempting to replicate an original study with a higher-power design will need the original effect size estimate to calculate the sample size of the replication study. Similarly, researchers might opt for a more conservative approach which is to use the lower CI bound of the original effect size. Alternatively, researchers may use the precision in parameter estimation method, which also requires CIs, to identify the minimum sample size that would ensure a precise estimate of the population parameter [@maxwell2008]. Therefore, the omission of reporting effect sizes and CI, along with the lack of making raw data publicly available, may hinder any attempt of replication since other researchers might not be able to conduct an a priori power analysis based on the original effect size or CI.
+
+However, reporting only effect sizes and their CIs, and full information about the a priori power analyses, might not be enough. With the aim of facilitating cumulative scientific knowledge through meta-analysis [@lakens_calculating_es; @lakens2016] and the use of other statistical methods such as $z$-curve/$p$-curve [@bartos_2022; @simonsohn2014] or Bias and Uncertainty Corrected Sample Size (BUCSS) to conduct power analyses adjusting for publication bias and uncertainty around parameter estimates [@anderson_sample_planning], it has been suggested that besides sample size per condition, means, standard deviations (SDs) and exact *p*-values, studies should also disclose *F*-ratio or *t*-statistics, the type of design and the correlations between dependent observations for within-subjects designs [@lakens2016], but it appears that this is rarely achieved. The compounding issues of poor reporting practices are easy to demonstrate with two examples; consider a within-subject design (i.e., pre vs. post) in which a study reports means and SDs but not the within-subject effect size. Thus, researchers attempting to conduct a meta-analysis, and assuming the study meets the inclusion criteria, should use Hedges’ *g~av~* effect size (effect size *g~av~*) from such a study [@lakens_calculating_es]. However, these researchers may well not be able to calculate the effect size *g*~av~ [see supplementary file in @lakens_calculating_es] because the correlation between observations is never reported. Alternatively, as long as means, SDs, number of observations, *t*-statistic and exact *p*-value are reported, researchers could use the user-friendly web application *within* [@debruinewithin2021] to estimate the correlation parameter, and then calculate effect size *g~av~*. However, again, *t*-statistics and exact *p*-values are usually not reported. Finally, researchers may opt to ask the study authors for the correlation, the *t*-statistic or the raw data so that researchers can calculate it themselves. Yet, given the reluctance of sports and exercise science researchers for sharing data [@borg_sharing_practices], one possible outcome is that researchers will not be able to get hold of this. Hence, researchers may have to discard the study due to poor reporting practices and a lack of data sharing. Second, researchers attempting to conduct a priori power analysis using G\*Power for a within-subject ANOVA will need the correlations between observations [@faul2009]. However, again, this correlation is seldom reported. Taken together, these two hypothetical situations reflect some of the barriers that researchers must overcome when attempting to conduct a meta-analysis or an a priori power analysis.
+
+Furthermore, the reporting of exact *p*-values and effect sizes not only informs about the statistical significance, direction and magnitude of an effect, but also can be used to answer meta-scientific questions (e.g., how replicable is a particular set of findings?) by performing a $z$-curve/$p$-curve analysis, a meta-analysis or a meta-meta-analysis. Addressing meta-scientific questions may require the analysis of large datasets [for example, see @chavalarias2016; @hartgerink2016; @stanleywhatmetaanalyses2018; @szucs_2017]. This can be facilitated by the use of software to scan, select and analyze large sets of published data, where statistical results should be machine-readable. The ultimate goal is to enhance the ability of computers to automatically find and use the data, in addition to supporting its reuse by researchers in alignment with the FAIR principles [@wilkinson_fair]. This can be facilitated by the adoption of common reporting practices such as the reporting standards recommended by the American Psychological Association (APA). Following APA standards, statistical test results should be reported in the following order: the *F*-ratio or *t*-statistic and degrees of freedom (in parentheses), followed by the *p*-value (e.g., *F*(1,35) = 5.45, *p* = 0.001 or *t*(85) = 2.86, *p* = 0.025). However, this is not a common standard reporting practice in sports and exercise science. Thus, adopting common reporting practices, such as APA’s reporting recommendation, would facilitate machine readability and data usability, enabling the analysis of large sets of data containing *p*-values, effect sizes or CIs. The reporting of statistical results is key to replicating original studies, assessing the replication success and conduct additional statistical tests. However, the heterogeneity of our reporting practices in sports and exercise science makes a full evaluation of replicability in our field problematic, to say the least.
+
+## Future recommendations for sports and exercise science: adoption of Open Science practices
+
+As a consequence of the above practices [@Abt2020; @asendorpf2013; @button2013; @fraley2014; @maxwell2004] and their effect on replicability rates reported by replication projects [@camerer2016; @camerer2018; @errington2021; @klein2014; @osc2015], Open Science practices are slowly being adopted within the research ecosystem. Open Science practices refer to a set of behaviors that enable research to be reproduced and replicated, with the aim of improving the reliability of study findings [@asendorpf2013; @munafo2017]. These practices may be especially important in research fields that reward publication of significant findings from studies with low power designs and exploiting, either intentionally or not, researchers’ degrees of freedom [@simmons2011; @smaldino2016; @wicherts_2016]. We herein suggest a series of Open Science practices that could be adopted by researchers and journals to improve the replicability in our field [@asendorpf2013; @nosek2015; @caldwellmoving2020].
+
+One practice is preregistration, which was conceived to mitigate QRPs by preventing HARKing and by reducing the risk of *p*-hacking via restricted flexibility in study design and data analysis [@caldwellmoving2020; @munafo2017]. In preregistered studies, authors register the protocol of their hypothesis, methods and analysis plan before data collection. Consequently, preregistered studies have been observed to produce smaller effect sizes than non-preregistered studies due to the likely absence of publication bias and QRPs [@schäfer2019]. However, preregistration alone may still not be enough to prevent publication bias [@rasmussen2009]. Alternatively, Registered Reports are considered a more effective format against publication bias [@munafo2017; @nosek_lakens_2014; @scheel2022]. For instance, Scheel et al. [-@scheel2022] found that 96% of non-registered studies reported significant findings in comparison to 44% of Registered Reports. In a Registered Report, one submits a detailed plan of the research questions, hypotheses, methodology, and analysis to a scientific journal for review prior to collecting data. Once a Registered Report is accepted, the journal agrees to publish the study if the quality control criteria are met, regardless of the study results. However, to date, only five sports and exercise science journals offer the Registered Report format, namely, *Journal of Experimental Physiology, Human Movement Science*, *Science and Medicine in Football* [@impellizzeri_2019], *Psychology of Sport and Exercise*, *Reports in Sport and Exercise* and *Journal of Sports Sciences* [@abt_rr2021]. Another practice that should be increasingly adopted is the use and report of a priori power analyses for sample size planning to ensure that studies are conducted with adequate power given the effect size of interest [@asendorpf2013; @lakenssamplejustification]. In addition, low availability of research data reinforces the importance of sharing data, including raw data, materials and code in public data repositories (e.g., Open Science Framework, Dryad Digital Repository and Zenodo), and improving transparency and quality of reporting practices [@asendorpf2013; @munafo2017]. Sharing research data alongside a manuscript increases the transparency of the research process because it allows both reviewers and readers to verify the statistical results and therefore increase the reliability of the presented findings. Finally, sports and exercise researchers should conduct replications where needed and feasible [@camerer2016; @camerer2018; @coles2018; @errington2021; @osc2015; @field2019; @isager2021]. Replication provides diagnostic evidence about a finding and allows for exploring the boundaries of studied effects, and ultimately, the progression of science by confronting the existing understanding with new evidence [@klein2018; @nosek2022; @nosek2017; @nosek2020]. Despite the core importance of replicability, very few replication studies have been attempted in sports and exercise science [@halperin2018]. In this regard, it is worth mentioning a current collaborative replication project in the field attempting to conduct close replications of original study findings [@murphy_2022].
+
+## Conclusion
+
+Based on previous findings in other research areas [@camerer2018; @fraley2014; @maxwell2004; @osc2015] and similarities to our own discipline [@Abt2020; @borg_sharing_practices; @buttner2020; @halperin2018], several methodological issues such as a high proportion of significant findings, studies with underpowered designs, and inaccurate reporting practices cast serious doubts about the replicability of sports and exercise science findings [@Abt2020; @borg_sharing_practices; @buttner2020; @halperin2018]. Firstly, there might be an excess of significant findings given the high percentage of significant findings reported [@buttner2020] and the observed power estimates we have provided. This excess may indicate the presence of other factors such as publication bias, QRPs and studies with underpowered designs that can increase the number of false positives, and should be specifically investigated in future studies. Secondly, the small sample sizes reported in several biomechanics and sports and exercise science journals may also be a cause of concern, especially in studies using between-subject designs, for several reasons [@button2013; @fraley2014]. Small samples are likely to yield underpowered designs, which are known to increase the proportion of false positives and false negatives, produce overestimated effect sizes and increase the uncertainty around effect size estimates (i.e., wide CIs). Thirdly, there is clear evidence that most studies do not report enough statistical results, such as effect sizes, CI, *F*-ratios, *t*-statistics and degrees of freedom, which directly impact the ability to evaluate methodological quality effectively. Altogether, although there is evidence indicating that our field is likely to face a problem with replicability, we acknowledge that the power estimates provided herein (based on a sample size of $n$ = 19 [@Abt2020] and an effect size *d* of 0.43 [@swinton2022]) might not be representative of the field and should be interpreted with caution. Furthermore, sports and exercise science literature on this topic is very scarce, and future studies should therefore systematically examine the presence of the aforementioned methodological issues. Yet, the evidence presented herein indicates there is clear room for improving our research standards and highlights the importance of increasingly adopting Open Science practices in sports and exercise science research.

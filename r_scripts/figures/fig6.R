@@ -58,8 +58,10 @@ c6 <- df_h1 %>% ggplot(aes(x = d_all3)) +
 
 Fig6 <-a6+b6+c6+plot_annotation(tag_levels = "a") 
 
-print(Fig6)
-
-pdf(here("figures", "Fig6.pdf"), height = 3, width = 10, useDingbats = F)
-print(Fig6)
-dev.off()
+ggsave(
+  here("figures", "fig6.png"),
+  plot = Fig6,
+  width = 10,
+  height = 3,
+  dpi = 300
+)

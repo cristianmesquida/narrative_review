@@ -5,7 +5,6 @@ library(pwr)
 library(tidyverse)
 library(here)
 
-
 # Power curves for an unpaired t-test given a range of sample sizes and ES
 effect_sizes <- c(0.2, 0.5, 0.8)# range of ES 
 sample_sizes = seq(10, 100, 10)# create a range of sample sizes
@@ -41,10 +40,12 @@ Fig4<- ggplot(power_curves, aes(x=sample_sizes,y=power,linetype=effect_sizes)) +
   xlab("Sample size") +
   ylab("Power (%)") +
   labs(linetype=expression(paste("Effect size ",italic(d))))
-       
-print(Fig4)
-  
-pdf(here("figures", "Fig4.pdf"), height = 3, width = 4.5, useDingbats = F)
-print(Fig4)
-dev.off()
+
+ggsave(
+  here("figures", "fig4.png"),
+  plot = Fig4,
+  width = 4.5,
+  height = 3,
+  dpi = 300
+)
 

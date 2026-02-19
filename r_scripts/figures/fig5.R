@@ -124,8 +124,10 @@ ggtitle(label = title_c5)
 
 Fig5 <-a5+b5+c5+plot_annotation(tag_levels = "a") 
 
-print(Fig5)
-
-pdf(here("figures", "Fig5.pdf"), height = 3, width = 9, useDingbats = F)
-print(Fig5)
-dev.off()
+ggsave(
+  here("figures", "fig5.png"),
+  plot = Fig5,
+  width = 9,
+  height = 3,
+  dpi = 300
+)

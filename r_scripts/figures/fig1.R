@@ -54,9 +54,10 @@ Fig1 <- a1+b1+plot_annotation(tag_levels = "a")
 Fig1 <- ggarrange(Fig1)
 Fig1 <- annotate_figure(Fig1,bottom = text_grob(title,size = 10,vjust = -0.9))
 
-                   
-print(Fig1)
-
-pdf(here("figures", "Fig1.pdf"), height = 3,width = 6,useDingbats = F)
-print(Fig1)
-dev.off()
+ggsave(
+  here("figures", "fig1.png"),
+  plot = Fig1,
+  width = 10,
+  height = 3,
+  dpi = 300
+)

@@ -10,7 +10,7 @@ set.seed(001)
 random1 <- sample(1:1000, 60, replace=TRUE)
 random2 <- sample(1:1000, 60, replace=TRUE)
 
-# Randomnly recruit 60 participants from above populations samples per population
+# Randomly recruit 60 participants from above populations samples per population
 s1 <- data.frame(values=sim1[random1, ])
 s2 <- data.frame(values=sim2[random2, ])
 

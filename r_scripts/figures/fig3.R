@@ -29,7 +29,7 @@ phacked <- data.frame(res$Final.p)# create a data frame
 
 phacked <- phacked %>% filter(res.Final.p<0.1) # selects p-values smaller than 0.1 
 
-pdf(here("figures", "Fig3.pdf"),height = 5,width = 5,useDingbats = F)
+pdf(here("figures", "fig3.pdf"),height = 5,width = 5,useDingbats = F)
 hist(phacked$res.Final.p, breaks = 20, xlim=c(0,0.1), ylim=c(0,50), 
      main=NULL, xlab="Observed p-value")
 axis(side=2, at=seq(0,50,10), label=seq(0,50,10))

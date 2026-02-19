@@ -100,9 +100,11 @@ c2 <- df_h1 %>% ggplot(aes(x = p3)) +
   geom_vline(xintercept = 0.05,linetype = "solid",colour = "red")
  
 Fig2 <-a2+b2+c2+plot_annotation(tag_levels = "a") 
-print(Fig2)
 
-pdf(here("figures", "Fig2.pdf"), height = 3, width = 10, useDingbats = F)
-print(Fig2)
-dev.off()
-
+ggsave(
+  here("figures", "fig2.png"),
+  plot = Fig2,
+  width = 10,
+  height = 3,
+  dpi = 300
+)

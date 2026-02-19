@@ -65,9 +65,11 @@ c7 <- df_ci %>% ggplot(aes(x = ciwidth3)) +
 
 Fig7 <-a7+b7+c7+plot_annotation(tag_levels = "a") 
 
-print(Fig7)
-
-pdf(here("figures", "Fig7.pdf"), height = 3, width = 10, useDingbats = F)
-print(Fig7)
-dev.off()
+ggsave(
+  here("figures", "fig7.png"),
+  plot = Fig7,
+  width = 10,
+  height = 3,
+  dpi = 300
+)
 

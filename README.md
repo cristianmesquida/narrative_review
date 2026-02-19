@@ -1,15 +1,24 @@
 This repository contains all code and data to generate the results and figures reported in this manuscript.
 
-Code
-The folder /r_scripts contains:
-- power_calculations.r contains the R code and results for power calculations included as examples.
-- The subfolder simulations/ contains:
-  - simulation_fig1.R contains the R code to simulate data for Figure 1
-  - simulation_fig2_6_7.R contains the R code to simulate data for Figure 2, Figure 6 and Figure 7
-  - simulation_fig3.R contains the R code to simulate data for Figure 3.
-  - simulation_fig8.R contains the R code to simulate data for Figure 8.
-- The subfolder figures/ contains all code to create the figures included in this manuscript.
-
-Figures
-The folder figures/ contains all figures included in the manuscript.
+Repository structure:
+```{r}
+narrative_review/
+├── manuscript.qmd            # Quarto document containing the manuscript
+├── r_scripts/           
+|   ├── power_calculations.R  # Script containing power analysis calculations
+|   ├──  simulations/         # Folder containing scripts to reproduce simulations used in Figures 1, 2, 6, 7 and 8
+|        ├── simulation_fig1.R
+|        ├── simulations_fig2_6_7.R
+|        └── simulation_fig8.R
+|   └── figures/              # Folder containing scripts to reproduce all figures
+|       ├── fig1.R
+|       ├── fig2.R
+|       ├── fig3.R
+|       ├── fig4.R
+|       ├── fig5.R
+|       ├── fig6.R
+|       ├── fig7.R
+|       └── fig8.R
+└── figures/                  # Contains all figures included in the manuscript
+```
 

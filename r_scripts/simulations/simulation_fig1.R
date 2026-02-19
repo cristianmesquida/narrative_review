@@ -1,7 +1,8 @@
 # Here we simulate 1000 p-values under the null hypothesis (i.e., there is no 
-# signficant effect to be found). These p-values will be used in Figure 1.
+# significant effect to be found). These p-values will be used in Figure 1.
 
 set.seed(123) # for replicability
+
 #Simulation for Figure 1
 nSims <- 1000 #number of simulated experiments
 p <-numeric(nSims) #set up empty container for all simulated p-values
